@@ -75,10 +75,18 @@
    var marker = L.marker([25.7182,-80.2783]).addTo(map);
    var popup = L.popup()
       .setLatLng([25.7182,-80.2783])  // lat and long of the volcano/earthquake
-      .setContent("<b>Hello world!</b><br>This is a popup. ") //details of volcano/earthquake 
+      .setContent("<b>Hello world!</b><br>This is a popup. ") //detailed information of volcano/earthquake and link to its detail page
       .openOn(map);
       
    marker.bindPopup(popup).openPopup();
+   
+   var marker1 = L.marker([25.7195,-80.282]).addTo(map);
+   var popup1 = L.popup()
+      .setLatLng([25.7195,-80.282])  // lat and long of the volcano/earthquake
+      .setContent("<b>Volcano Name</b><br>Last Updated: 05182019 <br> <a href='volcano.html'>Link to details <a>") //detailed information of volcano/earthquake and link to its detail page
+      .openOn(map);
+      
+   marker1.bindPopup(popup1).openPopup();  
   
 </script>
 
