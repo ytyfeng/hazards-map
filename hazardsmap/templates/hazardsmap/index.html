@@ -72,6 +72,14 @@
     accessToken: 'pk.eyJ1IjoieXR5ZmVuZyIsImEiOiJjanRtMm40dXcwMXY0NDRxazVsaTRldTdzIn0.wirqb-mPBGrzdOdq8Z9JNw'
 }).addTo(map);
    
+   var marker = L.marker([25.7182,-80.2783]).addTo(map);
+   var popup = L.popup()
+      .setLatLng([25.7182,-80.2783])  // lat and long of the volcano/earthquake
+      .setContent("<b>Hello world!</b><br>This is a popup. ") //details of volcano/earthquake 
+      .openOn(map);
+      
+   marker.bindPopup(popup).openPopup();
+  
 </script>
 
 </body>
