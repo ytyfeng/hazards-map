@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "hazardsmap/templates/hazardsmap",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
