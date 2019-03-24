@@ -21,12 +21,12 @@
 <script>
   // Initialize Firebase
   var config = {
-    apiKey: "AIzaSyADqO-NN6-LdkHEyHAWDh8HFuOI5duoGjc",
-    authDomain: "pyaccountant-160.firebaseapp.com",
-    databaseURL: "https://pyaccountant-160.firebaseio.com",
-    projectId: "pyaccountant-160",
-    storageBucket: "pyaccountant-160.appspot.com",
-    messagingSenderId: "417875504734"
+    apiKey: "AIzaSyAVNOQwBRqPgcsbovaDwR-MEHVa6TGmkTs",
+    authDomain: "hazardsmap.firebaseapp.com",
+    databaseURL: "https://hazardsmap.firebaseio.com",
+    projectId: "hazardsmap",
+    storageBucket: "hazardsmap.appspot.com",
+    messagingSenderId: "698065011933"
   };
   firebase.initializeApp(config);
 </script>
@@ -83,7 +83,7 @@
    var marker1 = L.marker([25.7195,-80.282]).addTo(map);
    var popup1 = L.popup()
       .setLatLng([25.7195,-80.282])  // lat and long of the volcano/earthquake
-      .setContent("<b>Volcano Name</b><br>Last Updated: 05182019 <br> <a href='volcano.html'>Link to details <a>") //detailed information of volcano/earthquake and link to its detail page
+      .setContent("<b>Volcano Name</b><br>Last Updated: 05182019 <br> <a href='volcano.html'>Link to details <a>") 
       .openOn(map);
       
    marker1.bindPopup(popup1).openPopup();  
